@@ -4,6 +4,6 @@ fetch('https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     .then(res => res.json())
     .then(data => {
         document.body.style.backgroundImage= `url(${data.urls.full})`
-        document.querySelector('#author').textContent = data.user.name
+        document.querySelector('#author').textContent = `By: ${data.user.name}`
         console.log(data)
     })
