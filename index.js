@@ -1,5 +1,9 @@
-const date = new Date()
+function getCurrentTime() {
+    const date = new Date()
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+}
 
+setInterval(getCurrentTime, 1000)
 
 
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
