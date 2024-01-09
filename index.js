@@ -45,3 +45,5 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
         `
     })
     .catch(err => console.error(err))
+
+navigator.geolocation.getCurrentPosition()
