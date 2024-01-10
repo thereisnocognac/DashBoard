@@ -1,6 +1,10 @@
 let theList = document.getElementById('list')
 const addToDo = document.getElementById('addList')
 
+addToDo.addEventListener('click', function(e) {
+    console.log(e)
+})
+
 
 function getCurrentTime() {
     const date = new Date()
