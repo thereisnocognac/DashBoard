@@ -1,5 +1,6 @@
 let theList = document.getElementById('list')
 const addToDo = document.getElementById('addList')
+const newList = document.getElementById('addNewItem')
 
 addToDo.addEventListener('click', function(e) {
     e.preventDefault();
@@ -7,6 +8,8 @@ addToDo.addEventListener('click', function(e) {
     const newItem = document.createElement('li')
     //Adding class to new element
     newItem.classList.add('item')
+    //Adding the text
+    newItem.textContent = newList.value
 })
 
 
