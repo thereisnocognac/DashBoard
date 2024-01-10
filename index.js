@@ -1,3 +1,7 @@
+let theList = document.getElementById('list')
+const addToDo = document.getElementById('addList')
+
+
 function getCurrentTime() {
     const date = new Date()
     document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
