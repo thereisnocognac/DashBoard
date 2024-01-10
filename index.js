@@ -2,7 +2,11 @@ let theList = document.getElementById('list')
 const addToDo = document.getElementById('addList')
 
 addToDo.addEventListener('click', function(e) {
-    console.log(e)
+    e.preventDefault();
+    //Create Element vvv
+    const newItem = document.createElement('li')
+    //Adding class to new element
+    newItem.classList.add('item')
 })
 
 
